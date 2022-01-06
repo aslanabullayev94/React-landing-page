@@ -1,0 +1,18 @@
+.ButtonEl {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.ButtonEl-btn {
+  margin: auto;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .ButtonEl {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 25px 0;
+  }
+}

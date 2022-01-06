@@ -1,0 +1,28 @@
+.Body {
+  margin: 80px 0;
+  letter-spacing: 1px;
+}
+
+.Body-header-wrapper {
+  padding: 0 20px;
+}
+
+.Body-header {
+  width: 100%;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .Body {
+    letter-spacing: 2px;
+  }
+  .Body-header-wrapper {
+    padding: 0;
+  }
+  .Body-header {
+    /* width: 70%; */
+    font-size: 72px;
+    font-weight: 800;
+  }
+}

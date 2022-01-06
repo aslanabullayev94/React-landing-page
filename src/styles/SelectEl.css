@@ -1,0 +1,39 @@
+.SelectEl {
+  /* background-color: aqua; */
+  /* text-align: center; */
+  padding: 20px 20px;
+  /* margin: 25px 0; */
+  border-top: 1px solid rgb(155, 159, 164);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.SelectEl-header {
+  margin-bottom: 10px;
+}
+
+.SelectEl .SelectEl-header > * {
+  margin-right: 10px;
+  color: rgb(155, 159, 164);
+}
+
+.SelectEl .SelectEl-select {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: inherit;
+  outline: none;
+  /* border: 1px solid transparent; */
+  color: white;
+  font-size: 17px;
+}
+
+.SelectEl-select option {
+  background-color: rgb(78, 86, 87);
+}
+
+@media (min-width: 992px) {
+  .SelectEl {
+    padding: 0;
+    border: none;
+  }
+}

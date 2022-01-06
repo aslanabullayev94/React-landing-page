@@ -1,4 +1,3 @@
-import './styles/App.css';
 import Page from './Page'
 
 function App() {
