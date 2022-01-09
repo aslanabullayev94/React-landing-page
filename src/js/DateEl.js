@@ -7,7 +7,7 @@ class DateEl extends Component {
             <div className="DateEl">
                 <div className="DateEl-header">
                     <i className="fas fa-house-user"></i>
-                    <label>check-in</label>
+                    <label>Select Date</label>
                 </div>
                 <input className="DateEl-date" type="date"></input>
             </div>

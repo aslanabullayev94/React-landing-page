@@ -28,7 +28,7 @@
   filter: invert(1);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1240px) {
   .DateEl {
     padding: 0;
     border: none;

@@ -17,7 +17,7 @@
   color: rgb(155, 159, 164);
 }
 
-.SelectEl .SelectEl-select {
+.SelectEl-select {
   width: 100%;
   padding: 5px 10px;
   background-color: inherit;
@@ -31,9 +31,12 @@
   background-color: rgb(78, 86, 87);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1240px) {
   .SelectEl {
     padding: 0;
     border: none;
+  }
+  .SelectEl-select {
+    width: 250px;
   }
 }

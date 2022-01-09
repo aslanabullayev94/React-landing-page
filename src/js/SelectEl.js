@@ -3,13 +3,6 @@ import '../styles/SelectEl.css';
 
 class SelectEl extends Component {
     render() {
-        // console.log(this.props);
-        // console.log(this.props.data[0].icons);
-        // console.log(
-        //     this.props.data[1].optionText.map((address) => {
-        //         return address;
-        //     })
-        // )
         return (
             <div className="SelectEl">
                 <div className="SelectEl-header">

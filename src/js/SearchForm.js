@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SelectEl from './SelectEl';
 import DateEl from './DateEl';
-import ButtonEl from './ButtonEl';
+// import ButtonEl from './ButtonEl';
 import '../styles/SearchForm.css'
 
 class SearchForm extends Component {
@@ -14,35 +14,38 @@ class SearchForm extends Component {
             ],
             data2: [
                 { icons: 'fas fa-user-alt' },
-                { optionText: ['Manchester / East London', 'Manchester / West London'] },
+                { optionText: ['2 Adults', '3 Adults', '4 Adults'] },
                 { labelText: 'Guests' }
             ]
         }
 
         return (
             <div className="SearchForm">
-                <form id="SearchForm-form">
-                    <div className="form-header">
-                        <h4>Book your vacation</h4>
-                    </div>
+            <div className="form-header">
+                <h4>Book your vacation</h4>
+            </div>
+                <form className="SearchForm-form" onSubmit={(event) =>{
+                    event.preventDefault();
+                }}>
                     <div className="form-body">
                         <SelectEl
                             className="form-body-el"
                             data={selectData.data1}
                         />
-
-                        <DateEl className="form-body-el" />
-                        <DateEl className="form-body-el" />
-
                         <SelectEl
                             className="form-body-el"
                             data={selectData.data2}
                         />
-                        <ButtonEl
+                        <DateEl
                             className="form-body-el"
+                            data={selectData.data2}
                         />
                     </div>
-                    {/* <ButtonEl /> */}
+                    <div className="ButtonEl">
+                        <button
+                            type="submit"
+                            className="ButtonEl-btn">Search</button>
+                    </div>
                 </form>
             </div>
         )
